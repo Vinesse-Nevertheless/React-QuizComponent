@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Pluralsight Getting Started with Shell Scripting for Bash and Z Shell
+# https://app.pluralsight.com/library/courses/shell-scripting-bash-zshell-getting-started/table-of-contents
+
 #condition to check for proper number of arguments
 #THE SPACES AROUND THE ! ARE NECESSARY FOR IT TO WORK PROPERLY.
 
