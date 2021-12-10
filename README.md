@@ -1,2 +1,1 @@
-# ShellScripts
-practice scripts
+# DisplayCS50
