@@ -1,1 +1,1 @@
-# DisplayCS50
+# OpenShiftPractice
