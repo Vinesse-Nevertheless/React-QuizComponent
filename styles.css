@@ -19,7 +19,7 @@ body {
 
 /*Added a banner image*/
 .saturn-image {
-  background-image: url("https://ide-1d96ea1571c9478c97547ffd33d6bff1-8080.cs50.ws/saturn.jpg");
+  background-image: url("https://github.com/Vinesse-Nevertheless/SaturnTriviaApp/blob/main/saturn.jpg");
   height: 33%;
   background-position: center;
   background-repeat: no-repeat;
