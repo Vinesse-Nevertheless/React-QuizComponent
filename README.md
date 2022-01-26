@@ -1,3 +1,0 @@
-# OpenShiftPractice
-# SaturnTriviaApp
-# SaturnTriviaApp
