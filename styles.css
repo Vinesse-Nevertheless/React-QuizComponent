@@ -19,7 +19,7 @@ body {
 
 /*Added a banner image*/
 .saturn-image {
-  background-image: url("./saturn.jpg");
+  background-image: url("saturn.jpg");
   height: 33%;
   background-position: center;
   background-repeat: no-repeat;
