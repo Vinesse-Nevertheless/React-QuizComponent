@@ -1,4 +1,4 @@
-# SaturnTriviaApp
+# Saturn Trivia App
 Simple trivia app with a few questions about Saturn
 
 ## Implementation Details 
