@@ -1,20 +1,21 @@
-//child component to Quiz.js
+//child component to Quiz.js and QuizQuestionButton
 import React, {Component} from "react";
+import QuizQuestionButton from "./QuizQuestionButton";
 
 class QuizQuestion extends Component{
     render(){
-       return <main> {/* RETURN REQUIRED */}
-        <section>
-          <p>{this.props.quiz_question.instruction_text}</p>
-        </section>
-        <section className="buttons">
-          <ul >
-              <li>
-                  {this.props.quiz_question.answer_options[1]}
-              </li>
-          </ul>
-        </section>
-      </main>
+      return <main> {/* RETURN REQUIRED */}
+      <section>
+        <p>{this.props.quiz_question.instruction_text}</p>
+      </section>
+      <section className="buttons">
+        <ul >
+        <QuizQuestionButton button_text = {this.props.quiz_question.answer_options[0]}/>
+        </ul>
+      </section>
+    </main>
+
+       
     }
 
 }

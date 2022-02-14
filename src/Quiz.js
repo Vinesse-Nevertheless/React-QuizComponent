@@ -13,14 +13,13 @@ class Quiz extends Component {
         super(props)
         this.state = {
             quiz_position:1
-            //quiz_question:quizData.quiz_questions[this.props.quiz_position-1]
         }  
     }
 
     //render quiz question
     render(){
         return <div className="QuizQuestion" >
-         <QuizQuestion quiz_question = {quizData.quiz_questions[0]} /> {/*[quiz.position-1] is what I thought but it doesn't work.  Maybe will find fix later.*/}
+         <QuizQuestion quiz_question = {quizData.quiz_questions[this.state.quiz_position-1]} />
         </div>
     }
 }
