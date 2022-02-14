@@ -1,7 +1,8 @@
-//Parent component to QuizQuestion.js
+//Parent component to QuizQuestion.js and QuizEnd.js
 
 import React, {Component} from "react";
 import QuizQuestion from "./QuizQuestion.js"
+import QuizEnd from "./QuizEnd.js"
 
 //Get quiz question number, question text, answer options and correct answer from json file
 let quizData = require('./quiz_data.json')
@@ -18,9 +19,17 @@ class Quiz extends Component {
 
     //render quiz question
     render(){
-        return <div className="QuizQuestion" >
-         <QuizQuestion quiz_question = {quizData.quiz_questions[this.state.quiz_position-1]} />
-        </div>
+        const isQuizEnd = this.state.quiz_position - 1 === quizData.quiz_questions.length;
+      // const isQuizEnd = false
+       return <div className="QuizQuestion" >
+          { isQuizEnd 
+           ? <QuizEnd />
+            : (
+              <QuizQuestion quiz_question = {quizData.quiz_questions[this.state.quiz_position-1]} />
+            )
+    }
+              </div>
+              
     }
 }
 
